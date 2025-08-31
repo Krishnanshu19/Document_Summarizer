@@ -28,34 +28,23 @@ This is a document summarizer application built using Flask and the Hugging Face
 ```bash
 git clone https://github.com/yourusername/document-summarizer.git
 cd document-summarizer
+
 2. Create a virtual environment
 It's recommended to use a virtual environment to manage dependencies.
 
-bash
-Copy
-Edit
+
 python3 -m venv summarizer-env
 3. Activate the virtual environment
 On Windows:
-bash
-Copy
-Edit
+
 summarizer-env\Scripts\activate
 On macOS/Linux:
-bash
-Copy
-Edit
 source summarizer-env/bin/activate
+
 4. Install the required dependencies
-bash
-Copy
-Edit
 pip install -r requirements.txt
 requirements.txt should include the following dependencies:
 
-plaintext
-Copy
-Edit
 flask
 transformers
 pillow
@@ -63,22 +52,14 @@ pytesseract
 fitz
 flask-cors
 Additionally, ensure that Tesseract OCR is installed on your system. You can download it from Tesseract GitHub or here for Windows.
-
 For image processing, you will also need Poppler installed for PDF-to-image conversion (used by pdf2image). You can download it from here.
 
 5. Set up the Tesseract path (Windows)
 You need to specify the Tesseract executable path in your script (adjust the path as needed):
-
-python
-Copy
-Edit
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 6. Run the application
 To start the Flask server, run:
-
-bash
-Copy
-Edit
 python app.py
 This will start the app on http://127.0.0.1:5000/.
 
@@ -109,9 +90,6 @@ file: The file to upload (PDF or image).
 length: (Optional) The length of the summary (short, medium, or long). Default is medium.
 
 Example Response:
-json
-Copy
-Edit
 {
   "message": "File uploaded, text extracted, and summarized",
   "filename": "example.pdf",
@@ -134,9 +112,6 @@ Tesseract OCR
 
 Poppler
 
-markdown
-Copy
-Edit
 
 ---
 
