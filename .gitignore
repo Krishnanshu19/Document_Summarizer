@@ -1,0 +1,41 @@
+# Python-related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environment
+summarizer-env/
+env/
+venv/
+
+# Flask-related
+instance/
+*.log
+*.pot
+*.py[cod]
+
+# Tesseract executable path (optional, if you don't want to include it)
+# (It's recommended to not include paths to external software like tesseract)
+# tesseract.exe
+
+# Uploads (Optional if you don't want to commit uploaded files)
+uploads/
+
+# PyCharm, VSCode or other IDEs
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Node.js (Add node_modules to ignore)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# .env files (Sensitive environment variables)
+.env
