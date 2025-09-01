@@ -1,4 +1,6 @@
-# Python-related
+# ==================
+# Python
+# ==================
 __pycache__/
 *.pyc
 *.pyo
@@ -6,35 +8,39 @@ __pycache__/
 *.db
 *.sqlite3
 
-# Virtual environment
-summarizer-env/
+# Virtual environments
 env/
 venv/
+summarizer-env/
 
 # Flask-related
 instance/
 *.log
 *.pot
-*.py[cod]
 
-# Tesseract executable path (optional, if you don't want to include it)
-# (It's recommended to not include paths to external software like tesseract)
-# tesseract.exe
-
-# Uploads (Optional if you don't want to commit uploaded files)
+# Uploads (ignore user uploaded files)
 uploads/
 
-# PyCharm, VSCode or other IDEs
+# ==================
+# Node.js (frontend)
+# ==================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# ==================
+# Environment & Secrets
+# ==================
+.env
+
+# ==================
+# IDE / Editor files
+# ==================
 .vscode/
 .idea/
 
-# Operating system files
-.DS_Store  # macOS
-Thumbs.db  # Windows
-
-# Node.js (Add node_modules to ignore)
-node_modules/
-
-# .env files (Sensitive environment variables)
-.env
-
+# ==================
+# OS generated files
+# ==================
+.DS_Store
+Thumbs.db
