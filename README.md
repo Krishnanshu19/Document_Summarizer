@@ -122,3 +122,4 @@ Poppler
 - **Setup and Installation**: Explains how to set up the project locally.
 - **API Endpoints**: Documents the API routes that are available to interact with the backend.
 - **License**: Adds a basic license section for the project (MIT License is used here).
+# Document_Summarizer
