@@ -123,3 +123,4 @@ Poppler
 - **API Endpoints**: Documents the API routes that are available to interact with the backend.
 - **License**: Adds a basic license section for the project (MIT License is used here).
 # Document_Summarizer
+# Document_Summarizer
